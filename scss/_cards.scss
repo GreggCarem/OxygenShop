@@ -1,0 +1,25 @@
+.cards {
+  h1 {
+    font-family: Raleway;
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 2.201rem;
+    text-align: left;
+  }
+  h2 {
+    font-family: Open Sans;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.31rem;
+    text-align: left;
+  }
+
+  background-color: #f7f7f7;
+
+  .card__1 {
+    width: 314px;
+    height: 370px;
+    background-color: white;
+    margin-inline: auto;
+  }
+}

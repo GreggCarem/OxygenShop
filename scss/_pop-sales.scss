@@ -1,0 +1,74 @@
+.pop-sales {
+  h4 {
+    font-family: Raleway;
+    font-size: 1.875rem;
+    font-weight: 300;
+    line-height: 2.188rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  h5 {
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+    letter-spacing: 0.375rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  h6 {
+    font-family: Raleway;
+    font-size: 1.063rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #a5a5a5;
+    display: block;
+    width: 10rem;
+    margin: auto;
+    margin-top: 1rem;
+  }
+}
+.pictorial {
+  display: block;
+  align-items: center;
+
+  .red__circle {
+    width: 3.919rem;
+    height: 3.919rem;
+    border-radius: 10rem;
+    background-color: #fb3b64;
+    margin-inline: auto;
+    margin-top: 1rem;
+  }
+
+  .blue__circle {
+    width: 3.919rem;
+    height: 3.919rem;
+    border-radius: 10rem;
+    background: #08a6e4;
+    margin-inline: auto;
+    margin-top: 1rem;
+  }
+
+  .green__circle {
+    width: 3.919rem;
+    height: 3.919rem;
+    border-radius: 10rem;
+    background: #55dfb4;
+    margin-inline: auto;
+    margin-top: 1rem;
+  }
+
+  .person__1 {
+    margin-left: 1.8rem;
+  }
+  .eye__1 {
+    margin-left: 1.35rem;
+    margin-top: 0.7rem;
+  }
+  .catalog__1 {
+    margin-left: 1.8rem;
+    margin-top: 0.3rem;
+  }
+}

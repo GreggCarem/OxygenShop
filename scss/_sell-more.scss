@@ -1,0 +1,41 @@
+.sell-more {
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 2.188rem;
+    line-height: 2.563rem;
+    color: #000000;
+    padding-bottom: 0.5em;
+  }
+  h3 {
+    display: inline-block;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 0.5em;
+    padding-bottom: 1.6em;
+    width: 15rem;
+    align-content: center;
+  }
+
+  .blue__button {
+    display: inline-block;
+    background-color: #08a6e4;
+    color: rgb(255, 255, 255);
+    width: 19.375rem;
+    height: 4.188rem;
+    border-radius: 2.5rem;
+    border: none;
+    box-shadow: 5px 10px 14px 0px #07ace64a;
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+  }
+  .sell--more--image {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
