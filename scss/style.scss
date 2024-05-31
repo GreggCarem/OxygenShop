@@ -2,8 +2,9 @@
 @import "sell-more";
 @import "pop-sales";
 @import "cards";
-
-$font-raleway: Raleway;
+@import "pricing";
+@import "form";
+@import "footer";
 * {
   box-sizing: border-box;
   margin: 0;

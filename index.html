@@ -13,76 +13,397 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <nav class="navigation">
-      <h1>OXYGENShop</h1>
-      <img class="nav--image" src="./resources/Menu.png" alt="menu" />
-      <ul class="header--list">
-        <li><a href="http://">WHY US</a></li>
-        <li><a href="http://">BENEFITS</a></li>
-        <li><a href="http://">PRICES</a></li>
-        <li><a href="http://">CONTACTS</a></li>
+    <nav class="nav">
+      <h1 class="nav__h1">OXYGENShop</h1>
+      <img class="nav__image" src="./resources/Menu.png" alt="menu" />
+      <ul class="nav__list">
+        <h2 class="nav__list__h2">
+          <li><a class="nav__list__link" href="http://">WHY US</a></li>
+        </h2>
+        <h2 class="nav__list__h2">
+          <li><a class="nav__list__link" href="http://">BENEFITS</a></li>
+        </h2>
+        <h2 class="nav__list__h2">
+          <li><a class="nav__list__link" href="http://">PRICES</a></li>
+        </h2>
+        <h2 class="nav__list__h2">
+          <li><a class="nav__list__link" href="http://">CONTACTS</a></li>
+        </h2>
       </ul>
     </nav>
     <main>
-      <section class="sell-more">
-        <h2>Sell More!</h2>
-        <h3>Open shop on our platform and increase your sales</h3>
-        <button class="blue__button">Open your shop</button>
+      <section class="sell__more">
+        <h2 class="sell__more__h2">Sell More!</h2>
+        <h3 class="sell__more__h3">
+          Open shop on our platform and increase your sales
+        </h3>
+        <button class="sell__more__button">Open your shop</button>
 
         <img
-          class="sell--more--image"
+          class="sell__more__image"
           src="./resources/computer-1-small.png "
           alt="computer1"
         />
+        <img
+          class="sell__more__image__big"
+          src="./resources/computer__big.png "
+          alt="computer1"
+        />
       </section>
-      <section class="pop-sales">
-        <h4>The most popular sales platform in country</h4>
-        <div class="pictorial">
-          <div class="red__circle">
-            <img class="person__1" src="./resources/Person1.png" alt="person" />
+      <section class="pop__sales">
+        <h4 class="pop__sales__h4">
+          The most popular sales platform in country
+        </h4>
+        <div class="pop__sales__main">
+          <div class="pop__sales__main__1">
+            <div class="pop__sales__main__1__red">
+              <img
+                class="pop__sales__main__1__red__img"
+                src="./resources/Person1.png"
+                alt="person"
+              />
+            </div>
+
+            <h5 class="pop__sales__main__1__h5">100000+</h5>
+            <h6 class="pop__sales__main__1__h6">daily entries</h6>
           </div>
-          <h5>100000+</h5>
-          <h6>daily entries</h6>
-          <div class="blue__circle">
-            <img class="eye__1" src="./resources/Eye 1.png" alt="eye" />
+
+          <div class="pop__sales__main__2">
+            <div class="pop__sales__main__2__blue">
+              <img
+                class="pop__sales__main__2__blue__img"
+                src="./resources/Eye 1.png"
+                alt="person"
+              />
+            </div>
+            <h5 class="pop__sales__main__2__h5">2000000+</h5>
+            <h6 class="pop__sales__main__2__h6">seen products every day</h6>
           </div>
-          <h5>2000000+</h5>
-          <h6>seen products every day</h6>
-          <div class="green__circle">
+
+          <div class="pop__sales__main__3">
+            <div class="pop__sales__main__3__green">
+              <img
+                class="pop__sales__main__3__green__img"
+                src="./resources/Catalog 1.png"
+                alt="person"
+              />
+            </div>
+            <h5 class="pop__sales__main__3__h5">10000+</h5>
+            <h6 class="pop__sales__main__3__h6">added posts daily</h6>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <hr class="card__space" />
+        <div class="card__1">
+          <div class="images">
             <img
-              class="catalog__1"
-              src="./resources/Catalog 1.png"
-              alt="catalog"
+              class="card__1__comp"
+              src="./resources/Macbook 2.png"
+              alt="computer"
+            />
+            <img
+              class="card__1__comp__big"
+              src="./resources/Macbook2 1-bigpng.png"
+              alt="computer"
+            />
+            <img
+              class="card__1__redsph__big"
+              src="./resources/Rectange -red-big.png"
+              alt="red-sphere"
+            />
+
+            <img
+              class="card__1__redsph"
+              src="./resources/Red-sphere.png"
+              alt="red-sphere"
             />
           </div>
-          <h5>10000+</h5>
-          <h6>added posts daily</h6>
+
+          <div class="card__1__text">
+            <h2 class="card__1__text__h2">Be always first</h2>
+            <h3 class="card__1__text__h3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </h3>
+          </div>
         </div>
-      </section>
-      <section class="cards">
-        <div class="card__1">
+        <hr class="card__space" />
+        <div class="card__2">
           <img
-            class="card__1__red"
-            src="./resources/Red-sphere.png"
-            alt="red_sphere"
+            class="card__2__iphone"
+            src="./resources/iPhone 2.png"
+            alt="iphone-2"
           />
           <img
-            class="card__1__mac"
-            src="./resources/Macbook 2.png"
-            alt="computer"
+            class="card__2__iphone__big"
+            src="./resources/iPhone--big.png"
+            alt="iphone-2"
           />
-          <h1>Be always first</h1>
-          <h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </h2>
+          <img
+            class="card__2__blue"
+            src="./resources/Blue-spere.png"
+            alt="blue-sphere"
+          />
+          <img
+            class="card__2__blue__big"
+            src="./resources/Ellipse-big.png"
+            alt="blue-sphere"
+          />
+          <div class="card__2__text">
+            <h2 class="card__2__text__h2">Your shop is where you are!</h2>
+            <h3 class="card__2__text__h3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </h3>
+          </div>
         </div>
-        <div class="card__2"></div>
-        <div class="card__3"></div>
+        <hr class="card__space" />
+        <div class="card__3">
+          <div class="card__3__text">
+            <h2 class="card__3__text__h2">Increase recognition your brand!</h2>
+            <h3 class="card__3__text__h3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </h3>
+          </div>
+          <div class="card__3__grey__square"></div>
+          <div class="card__3__green">
+            <div class="card__3__green__square">
+              <img
+                class="card__3__green__trumpet"
+                src="./resources/Trumpet 2.png"
+                alt="trumpet"
+              />
+            </div>
+          </div>
+        </div>
+        <hr class="card__space__bottom" />
       </section>
+
+      <section class="pricing">
+        <h2 class="pricing__h2">Pricing</h2>
+        <div class="pricing__general">
+          <div class="pricing__red">
+            <div class="pricing__red__basic">
+              <h3 class="pricing__red__basic__h3">Basic</h3>
+              <h4 class="pricing__red__basic__h4">$0</h4>
+            </div>
+
+            <div class="pricing__red__list">
+              <ul class="pricing__red__list__text">
+                <li>
+                  <img
+                    class="pricing__red__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />100 MB HDD
+                </li>
+                <li>
+                  <img
+                    class="pricing__red__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />1 Subdomain
+                </li>
+                <li>
+                  <img
+                    class="pricing__red__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />2 E-mails
+                </li>
+                <li>
+                  <img
+                    class="pricing__red__list__text__symbol"
+                    src="./resources/Cross.png"
+                    alt="check"
+                  />Two years license
+                </li>
+                <li>
+                  <img
+                    class="pricing__red__list__text__symbol"
+                    src="./resources/Cross.png"
+                    alt="check"
+                  />Full support
+                </li>
+              </ul>
+            </div>
+            <button class="pricing__red__button">Begin</button>
+          </div>
+
+          <div class="pricing__blue">
+            <div class="pricing__blue__professional">
+              <h3 class="pricing__blue__professional__h3">Professional</h3>
+              <h4 class="pricing__blue__professional__h4">$25</h4>
+              <h5 class="pricing__blue__professional__h5">Limited offer</h5>
+            </div>
+            <div class="pricing__blue__list">
+              <ul class="pricing__blue__list__text">
+                <li>
+                  <img
+                    class="pricing__blue__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />500 MB HDD
+                </li>
+                <li>
+                  <img
+                    class="pricing__blue__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />2 Subdomains
+                </li>
+                <li>
+                  <img
+                    class="pricing__blue__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />5 E-mails
+                </li>
+                <li>
+                  <img
+                    class="pricing__blue__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />One year license
+                </li>
+                <li>
+                  <img
+                    class="pricing__blue__list__text__symbol"
+                    src="./resources/Cross.png"
+                    alt="check"
+                  />Full support
+                </li>
+              </ul>
+            </div>
+            <button class="pricing__blue__button">Begin</button>
+          </div>
+          <div class="pricing__green">
+            <div class="pricing__green__premium">
+              <h3 class="pricing__green__premium__h3">Premium</h3>
+              <h4 class="pricing__green__premium__h4">$60</h4>
+              <h5 class="pricing__green__premium__h5">Limited offer</h5>
+            </div>
+            <div class="pricing__green__list">
+              <ul class="pricing__green__list__text">
+                <li>
+                  <img
+                    class="pricing__green__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />2 GB HDD
+                </li>
+                <li>
+                  <img
+                    class="pricing__green__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />5 Subdomains
+                </li>
+                <li>
+                  <img
+                    class="pricing__green__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />20 E-mails
+                </li>
+                <li>
+                  <img
+                    class="pricing__green__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />Two years license
+                </li>
+                <li>
+                  <img
+                    class="pricing__green__list__text__symbol"
+                    src="./resources/Checkbox.png"
+                    alt="check"
+                  />Full support
+                </li>
+              </ul>
+            </div>
+            <button class="pricing__green__button">Begin</button>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="form__question">
+          <h2 class="form__question__h2">Any questions?</h2>
+          <h3 class="form__question__h3">
+            Leave your email address or call us!
+          </h3>
+        </div>
+        <div class="form__information">
+          <h4 class="form__information__h4">
+            <img
+              class="form__information__image"
+              src="./resources/Mail-icon.png"
+              alt="mail"
+            />gregor.ten1@gmail.com
+          </h4>
+          <h4 class="form__information__h4">
+            <img
+              class="form__information__image"
+              src="./resources/Phone-icon.png"
+              alt="phone"
+            />+34686543354
+          </h4>
+        </div>
+        <form class="form__data">
+          <h5 class="form__data__h5">NAME</h5>
+          <input
+            class="form__data__h5__name"
+            type="text"
+            id="name"
+            name="name"
+          />
+          <h5 class="form__data__h5">EMAIL</h5>
+          <input
+            class="form__data__h5__email"
+            type="email"
+            id="email"
+            name="email"
+          />
+        </form>
+        <div class="consent">
+          <label id="checkbox">
+            <input class="consent__checkbox" type="checkbox" id="consent" />
+          </label>
+          <h6 class="consent__text">
+            I hereby give consent for my personal data included in my
+            application to be processed for the purposes of the recruitment
+            process under the European Parliament’s and Council of the European
+            Union Regulation on the Protection of Natural Persons as of 27 April
+            2016, with regard to the processing of personal data and on the free
+            movement of such data, and repealing Directive 95/46/EC (Data
+            Protection Directive)
+          </h6>
+          <button class="consent__button">Send</button>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__text">
+          <h1 class="footer__text__h1">OXYGENShop</h1>
+          <h2 class="footer__text__h2">© 2022 OXYGEN, All Rights Reserved</h2>
+        </div>
+        <div class="footer__links">
+          <a class="footer__links__twitter" href="https://oxygenworkspace.com"
+            ><img src="./resources/Twitter.png" alt="twitter" />
+          </a>
+          <a
+            href="https://www.linkedin.com/school/oxygen-recruiting/?originalSubdomain=es"
+            ><img src="./resources/Facebook.png" alt="facebook" />
+          </a>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

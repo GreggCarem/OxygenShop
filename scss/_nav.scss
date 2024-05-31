@@ -1,4 +1,4 @@
-.navigation {
+.nav {
   display: inline-block;
   padding-inline: 1em;
   padding-bottom: 1.05em;
@@ -8,8 +8,8 @@
   margin-bottom: 5em;
   position: relative;
 
-  h1 {
-    font-family: font-raleway;
+  &__h1 {
+    font-family: raleway;
     font-size: 2rem;
     font-weight: 300;
     line-height: 2rem;
@@ -17,15 +17,53 @@
     color: #08a6e4;
     display: inline-block;
   }
-  .nav--image {
+  &__image {
     height: 0.75rem;
     position: absolute;
     right: 20px;
     top: 25px;
   }
-  ul {
+  &__list {
     visibility: hidden;
-
     display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 3.7rem;
+    width: 100%;
+
+    &__h1 {
+      padding-left: 5rem;
+    }
+    &__image {
+      visibility: hidden;
+      display: none;
+    }
+    &__list {
+      visibility: visible;
+      display: inline-flex;
+      &__link {
+        text-decoration: none;
+        color: #a5a5a5;
+        font-family: Open Sans;
+        font-size: 0.688rem;
+        font-weight: 700;
+        letter-spacing: 0.205rem;
+        text-align: center;
+        margin-right: 5rem;
+        margin-top: 1rem;
+        vertical-align: sub;
+      }
+      &__link:hover {
+        color: black;
+        padding-bottom: 1.85em;
+        border-bottom: 4px solid rgb(1, 178, 243);
+      }
+    }
   }
 }

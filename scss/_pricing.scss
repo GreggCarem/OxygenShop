@@ -1,0 +1,354 @@
+ul {
+  list-style-type: none;
+}
+li {
+  padding-bottom: 1.3rem;
+}
+
+.pricing {
+  &__h2 {
+    font-family: Raleway;
+    font-size: 2.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  &__red {
+    display: block;
+    border: 1px solid #fb3b64;
+    border-radius: 18px;
+    margin: auto;
+    margin-bottom: 3rem;
+    max-width: 18.313rem;
+    padding-bottom: 1.3rem;
+
+    &__basic {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 5rem;
+      margin-left: 2rem;
+
+      &__h3 {
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: end;
+      }
+      &__h4 {
+        font-family: "Open Sans";
+        font-size: 2.875rem;
+        font-weight: 300;
+        color: #fb3b64;
+      }
+    }
+    &__list {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 16.5%;
+      margin-top: 2rem;
+      &__text {
+        font-family: "Open Sans";
+        font-size: 0.875rem;
+        font-weight: 400;
+        &__symbol {
+          margin-right: 0.6rem;
+        }
+      }
+    }
+    &__button {
+      position: absolute;
+      width: 9.375rem;
+      height: 3.125rem;
+      border-radius: 23px;
+      background-color: #eb476e;
+      color: white;
+      border: none;
+      margin-top: 14rem;
+      font-family: Open Sans;
+      font-size: 0.813rem;
+      font-weight: 700;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.pricing__blue {
+  margin-top: 3rem;
+  display: block;
+  border: 1px solid #07ace6;
+  border-radius: 18px;
+  margin: auto;
+  margin-bottom: 3rem;
+  max-width: 18.313rem;
+  padding-bottom: 1.3rem;
+
+  &__professional {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    text-align: center;
+
+    &__h3 {
+      font-family: Raleway;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    &__h4 {
+      font-family: "Open Sans";
+      font-size: 2.875rem;
+      font-weight: 300;
+      color: #07ace6;
+    }
+    &__h5 {
+      font-family: Raleway;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+  }
+  &__list {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1.5%;
+    margin-top: 2rem;
+    &__text {
+      font-family: "Open Sans";
+      font-size: 0.875rem;
+      font-weight: 400;
+      &__symbol {
+        margin-right: 0.6rem;
+      }
+    }
+  }
+  &__button {
+    position: absolute;
+    width: 9.375rem;
+    height: 3.125rem;
+    border-radius: 23px;
+    background-color: #07ace6;
+    color: white;
+    border: none;
+    margin-top: 14rem;
+    font-family: Open Sans;
+    font-size: 0.813rem;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+.pricing__green {
+  margin-top: 3rem;
+  display: block;
+  border: 1px solid #55dfb4;
+  border-radius: 18px;
+  margin: auto;
+  margin-bottom: 3rem;
+  max-width: 18.313rem;
+  padding-bottom: 1.3rem;
+
+  &__premium {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    text-align: center;
+
+    &__h3 {
+      font-family: Raleway;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    &__h4 {
+      font-family: "Open Sans";
+      font-size: 2.875rem;
+      font-weight: 300;
+      color: #55dfb4;
+      margin: 0;
+    }
+    &__h5 {
+      font-family: Raleway;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+  }
+  &__list {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 6%;
+    margin-top: 2rem;
+    &__text {
+      font-family: "Open Sans";
+      font-size: 0.875rem;
+      font-weight: 400;
+      &__symbol {
+        margin-right: 0.6rem;
+      }
+    }
+  }
+  &__button {
+    position: absolute;
+    width: 9.375rem;
+    height: 3.125rem;
+    border-radius: 23px;
+    background-color: #55dfb4;
+    color: white;
+    border: none;
+    margin-top: 14rem;
+    font-family: Open Sans;
+    font-size: 0.813rem;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+// @media only screen and (min-width: 1000px) {
+//   .pricing {
+//     &__general {
+//       display: flex;
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       justify-content: center;
+//       margin-left: 5rem;
+//       margin-right: 5rem;
+//     }
+//     &__red {
+//       text-align: center;
+//       width: 23rem;
+//       height: 30rem;
+//       &__basic {
+//         display: inline-block;
+//         vertical-align: top;
+//         margin-top: 3rem;
+//         margin-left: 1rem;
+//         margin-bottom: 2rem;
+
+//         &__h3 {
+//           font-family: Raleway;
+//           font-size: 20px;
+//           font-weight: 700;
+//           text-align: end;
+//         }
+//         &__h4 {
+//           font-family: "Open Sans";
+//           font-size: 2.875rem;
+//           font-weight: 300;
+//           color: #fb3b64;
+//         }
+//       }
+//       &__list {
+//         padding-right: 3rem;
+//         &__text {
+//           font-family: "Open Sans";
+//           font-size: 0.875rem;
+//           font-weight: 400;
+//           &__symbol {
+//             margin-right: 0.6rem;
+//           }
+//         }
+//       }
+//       &__button {
+//         margin-top: 18rem;
+
+//         margin-left: auto;
+//         margin-right: 56rem;
+
+//         right: 0;
+//       }
+//     }
+//     &__blue {
+//       text-align: center;
+//       width: 23rem;
+//       height: 30rem;
+//       &__professional {
+//         display: inline-block;
+//         vertical-align: top;
+//         margin-top: 3rem;
+//         margin-left: 1rem;
+//         text-align: center;
+//         margin-bottom: 1.5rem;
+
+//         &__h3 {
+//           font-family: Raleway;
+//           font-size: 20px;
+//           font-weight: 700;
+//           text-align: end;
+//         }
+//         &__h4 {
+//           font-family: "Open Sans";
+//           font-size: 2.875rem;
+//           font-weight: 300;
+//         }
+//       }
+//       &__list {
+//         padding-left: 1.3rem;
+//         &__text {
+//           font-family: "Open Sans";
+//           font-size: 0.875rem;
+//           font-weight: 400;
+//           &__symbol {
+//             margin-right: 0.6rem;
+//           }
+//         }
+//       }
+//       &__button {
+//         margin-top: 17rem;
+//         margin-left: auto;
+//         margin-right: 34rem;
+//         right: 0;
+//       }
+//     }
+//     &__green {
+//       text-align: center;
+//       width: 23rem;
+//       height: 30rem;
+//       &__professional {
+//         display: inline-block;
+//         vertical-align: top;
+//         margin-top: 3rem;
+//         margin-left: 1rem;
+//         text-align: center;
+//         margin-bottom: 1.5rem;
+
+//         &__h3 {
+//           font-family: Raleway;
+//           font-size: 20px;
+//           font-weight: 700;
+//           text-align: end;
+//         }
+//         &__h4 {
+//           font-family: "Open Sans";
+//           font-size: 2.875rem;
+//           font-weight: 300;
+//         }
+//       }
+//       &__list {
+//         padding-left: 1.3rem;
+//         &__text {
+//           font-family: "Open Sans";
+//           font-size: 0.875rem;
+//           font-weight: 400;
+//           &__symbol {
+//             margin-right: 0.6rem;
+//           }
+//         }
+//       }
+//       &__button {
+//         margin-top: 17rem;
+//         margin-left: auto;
+//         margin-right: 34rem;
+//         right: 0;
+//       }
+//     }
+//   }
+// }

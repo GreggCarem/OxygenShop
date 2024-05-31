@@ -1,0 +1,110 @@
+.form {
+  margin-top: 20%;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  max-width: 500rem;
+  display: grid;
+  place-items: center;
+
+  &__question__h2 {
+    font-family: Raleway;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  &__question__h3 {
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  &__information {
+    margin-top: 10%;
+    margin-bottom: 15%;
+
+    &__h4 {
+      font-family: "Open Sans";
+      font-size: 1rem;
+      font-weight: 100;
+      color: #a5a5a5;
+      margin-bottom: 1rem;
+    }
+  }
+  &__information__image {
+    vertical-align: middle;
+    padding-right: 1rem;
+  }
+
+  &__data {
+    &__h5 {
+      font-family: "Open Sans";
+      font-size: 0.688rem;
+      font-weight: 600;
+      letter-spacing: 0.206rem;
+      text-align: left;
+      color: #08a6e4;
+      margin-bottom: 1.5rem;
+      &__name {
+        border: none;
+        width: 19.5rem;
+        border-bottom: 0.063rem solid #95989a;
+        margin-bottom: 3rem;
+      }
+      &__email {
+        border: none;
+        width: 19.5rem;
+        border-bottom: 0.063rem solid #95989a;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .consent {
+    margin-top: 1.5rem;
+    &__checkbox {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &__text {
+      font-family: "Open Sans";
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 1rem;
+      color: #707070;
+      width: 17rem;
+      height: 9rem;
+      margin-left: 1.9rem;
+      display: block;
+      margin-top: -1.9rem;
+    }
+    &__button {
+      width: 14.125rem;
+      height: 3.563rem;
+      border: none;
+      border-radius: 35px;
+      background-color: #08a6e4;
+      box-shadow: 5px 10px 14px 0px #07ace64a;
+      margin-top: 2rem;
+      margin-left: 5.4rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+input[type="checkbox"]:checked {
+  background-color: #ffffff;
+}
+input[type="checkbox"]:checked:after {
+  content: url(/resources/Checkmark\ 1.png);
+  width: 2rem;
+  color: #08a6e4;
+}
+input[type="checkbox"] {
+  appearance: none;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 4px;
+  border: 1px solid #95989a;
+  box-shadow: none;
+  font-size: 1em;
+}

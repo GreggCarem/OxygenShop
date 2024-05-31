@@ -1,25 +1,311 @@
-.cards {
-  h1 {
-    font-family: Raleway;
-    font-size: 1.875rem;
-    font-weight: 400;
-    line-height: 2.201rem;
-    text-align: left;
-  }
-  h2 {
-    font-family: Open Sans;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.31rem;
-    text-align: left;
-  }
-
+.card {
+  display: block;
   background-color: #f7f7f7;
 
-  .card__1 {
-    width: 314px;
-    height: 370px;
+  &__space {
+    border: none;
+    margin-bottom: 2rem;
+
+    &__bottom {
+      border: none;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__1 {
     background-color: white;
-    margin-inline: auto;
+    margin: auto;
+    border: 0.063rem solid #e8e9ed;
+    border-radius: 0.313rem;
+    margin-right: 12%;
+    margin-left: 12%;
+
+    &__redsph {
+      position: relative;
+      top: -9rem;
+      right: -3.5rem;
+      display: block;
+      margin: auto;
+      &__big {
+        display: none;
+      }
+    }
+    &__comp {
+      display: block;
+      margin: auto;
+      padding-top: 2rem;
+      position: sticky;
+      z-index: 10;
+      &__big {
+        display: none;
+      }
+    }
+
+    &__text {
+      display: block;
+      margin-top: -7rem;
+      margin-left: 1.5rem;
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+
+      &__h2 {
+        font-family: Raleway;
+        font-size: 1.875rem;
+        font-weight: 400;
+        text-align: left;
+      }
+      &__h3 {
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 2rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__2 {
+    background-color: white;
+    margin: auto;
+    border: 0.063rem solid #e8e9ed;
+    border-radius: 0.313rem;
+    margin-right: 12%;
+    margin-left: 12%;
+
+    &__blue {
+      position: relative;
+      top: -8.9rem;
+      display: block;
+      margin: auto;
+      &__big {
+        display: none;
+      }
+    }
+    &__iphone {
+      display: block;
+      margin: auto;
+      padding-top: 1rem;
+      position: sticky;
+      z-index: 10;
+      &__big {
+        display: none;
+      }
+    }
+    &__text {
+      display: block;
+      margin-top: -7rem;
+      margin-left: 1.5rem;
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+
+      &__h3 {
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 1.5rem;
+        margin-right: 2rem;
+      }
+      &__h2 {
+        font-family: Raleway;
+        font-size: 1.875rem;
+        font-weight: 400;
+        text-align: left;
+        width: 13rem;
+      }
+    }
+  }
+  &__3 {
+    background-color: white;
+    margin: auto;
+    border: 0.063rem solid #e8e9ed;
+    border-radius: 0.313rem;
+    margin-bottom: 4rem;
+    margin-right: 12%;
+    margin-left: 12%;
+
+    &__text {
+      display: block;
+      margin-top: 2rem;
+      margin-left: 1.5rem;
+
+      &__h2 {
+        font-family: Raleway;
+        font-size: 1.875rem;
+        font-weight: 400;
+        text-align: left;
+        width: 15rem;
+      }
+      &__h3 {
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        margin-right: 3rem;
+        margin-top: 2rem;
+      }
+    }
+    &__green {
+      margin-top: 2rem;
+
+      &__square {
+        display: grid;
+        place-items: center;
+        background-color: #55dfb4;
+        border: 1px solid #e8e9ed;
+
+        height: 12.188rem;
+        border-radius: 5px;
+      }
+      &__trumpet {
+        margin: auto;
+        margin-top: 1.8rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .card {
+    &__1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2em;
+      width: 70.25rem;
+      height: 23.125rem;
+      margin: auto;
+
+      &__redsph {
+        display: none;
+        &__big {
+          display: flex;
+          position: relative;
+          top: -10rem;
+          right: -23.5rem;
+          margin: auto;
+        }
+      }
+
+      &__comp {
+        display: none;
+
+        &__big {
+          display: flex;
+          position: relative;
+          top: 8rem;
+          right: -16.5rem;
+          margin: auto;
+          z-index: 10;
+        }
+      }
+
+      &__text {
+        display: block;
+        margin-top: 7rem;
+        margin-left: -12rem;
+        max-width: 26rem;
+        position: relative;
+        left: -24rem;
+      }
+    }
+    &__2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2em;
+      width: 70.25rem;
+      height: 23.125rem;
+      margin: auto;
+
+      &__blue {
+        display: none;
+        &__big {
+          display: flex;
+          position: relative;
+          top: -1rem;
+          right: 39.5rem;
+          margin: auto;
+        }
+      }
+
+      &__iphone {
+        display: none;
+
+        &__big {
+          display: flex;
+          position: relative;
+          top: 0.5rem;
+          right: 1.5rem;
+          margin: auto;
+          z-index: 10;
+        }
+      }
+
+      &__text {
+        display: block;
+        margin-top: -16rem;
+        margin-left: 31.5rem;
+        max-width: 26rem;
+        position: relative;
+        left: 2rem;
+      }
+    }
+    &__3 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2em;
+      width: 70.25rem;
+      height: 23.125rem;
+      margin-top: auto;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 4rem;
+
+      &__grey__square {
+        height: 23rem;
+        width: 5rem;
+        background-color: #f7f7f7;
+        position: relative;
+        left: 23.8rem;
+      }
+      &__green {
+        display: flex;
+        position: relative;
+        top: 0;
+        right: -11.8rem;
+        margin: auto;
+
+        &__square {
+          display: grid;
+          place-items: center;
+          background-color: #55dfb4;
+          border: 1px solid #e8e9ed;
+          width: 27.5rem;
+          height: 23rem;
+          border-radius: 5px;
+        }
+
+        &__trumpet {
+          display: flex;
+          position: relative;
+          top: 1.5rem;
+          right: -0.5rem;
+          margin: auto;
+        }
+      }
+      &__text {
+        display: block;
+        margin-top: 5rem;
+        margin-left: -12rem;
+        max-width: 26rem;
+        position: relative;
+        left: 15.7rem;
+      }
+    }
   }
 }
