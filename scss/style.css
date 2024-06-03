@@ -1002,7 +1002,7 @@ input[type=checkbox]:checked {
 }
 
 input[type=checkbox]:checked:after {
-  content: url(/resources/Checkmark\ 1.png);
+  content: url(/resources/Checkmark.png);
   width: 2rem;
   color: #08a6e4;
 }
