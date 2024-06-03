@@ -325,7 +325,7 @@
 .card__1 {
   background-color: white;
   margin: auto;
-  border: 0.063rem solid #e8e9ed;
+  border: 1px solid #f7f7f7;
   border-radius: 0.313rem;
   margin-right: 12%;
   margin-left: 12%;
@@ -374,7 +374,7 @@
 .card__2 {
   background-color: white;
   margin: auto;
-  border: 0.063rem solid #e8e9ed;
+  border: 1px solid #f7f7f7;
   border-radius: 0.313rem;
   margin-right: 12%;
   margin-left: 12%;
@@ -382,6 +382,7 @@
 .card__2__blue {
   position: relative;
   top: -8.9rem;
+  right: auto;
   display: block;
   margin: auto;
 }
@@ -423,7 +424,7 @@
 .card__3 {
   background-color: white;
   margin: auto;
-  border: 0.063rem solid #e8e9ed;
+  border: 1px solid #f7f7f7;
   border-radius: 0.313rem;
   margin-bottom: 4rem;
   margin-right: 12%;
@@ -432,7 +433,6 @@
 .card__3__text {
   display: block;
   margin-top: 2rem;
-  margin-left: 1.5rem;
 }
 .card__3__text__h2 {
   font-family: Raleway;
@@ -456,7 +456,7 @@
   display: grid;
   place-items: center;
   background-color: #55dfb4;
-  border: 1px solid #e8e9ed;
+  border: 1px solid #f7f7f7;
   height: 12.188rem;
   border-radius: 5px;
 }
@@ -472,7 +472,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2em;
-    width: 70.25rem;
+    max-width: 70rem;
     height: 23.125rem;
     margin: auto;
   }
@@ -483,7 +483,7 @@
     display: flex;
     position: relative;
     top: -10rem;
-    right: -23.5rem;
+    right: -30.5rem;
     margin: auto;
   }
   .card__1__comp {
@@ -493,7 +493,7 @@
     display: flex;
     position: relative;
     top: 8rem;
-    right: -16.5rem;
+    right: -23.5rem;
     margin: auto;
     z-index: 10;
   }
@@ -505,15 +505,23 @@
     position: relative;
     left: -24rem;
   }
+  .card__1__text__line {
+    width: 20.478rem;
+    border: 2px solid #fb3b64;
+    margin-top: 2rem;
+  }
   .card__2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2em;
-    width: 70.25rem;
+    max-width: 70rem;
     height: 23.125rem;
     margin: auto;
+  }
+  .card__2__images {
+    transform: translateX(10rem);
   }
   .card__2__blue {
     display: none;
@@ -521,8 +529,8 @@
   .card__2__blue__big {
     display: flex;
     position: relative;
-    top: -1rem;
-    right: 39.5rem;
+    top: -19rem;
+    right: 12.2rem;
     margin: auto;
   }
   .card__2__iphone {
@@ -531,69 +539,72 @@
   .card__2__iphone__big {
     display: flex;
     position: relative;
-    top: 0.5rem;
-    right: 1.5rem;
+    top: 3rem;
+    right: 9rem;
     margin: auto;
     z-index: 10;
   }
   .card__2__text {
     display: block;
-    margin-top: -16rem;
-    margin-left: 31.5rem;
+    margin-top: 7rem;
+    margin-left: -12rem;
     max-width: 26rem;
-    position: relative;
-    left: 2rem;
+    transform: translateX(59%);
+  }
+  .card__2__text__line {
+    width: 20.478rem;
+    border: 2px solid #08a6e4;
+    margin-top: 2rem;
   }
   .card__3 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 2em;
-    width: 70.25rem;
+    max-width: 70rem;
     height: 23.125rem;
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 4rem;
-  }
-  .card__3__grey__square {
-    height: 23rem;
-    width: 5rem;
-    background-color: #f7f7f7;
-    position: relative;
-    left: 23.8rem;
+    margin: auto;
+    flex-direction: row;
   }
   .card__3__green {
-    display: flex;
+    display: inline-block;
     position: relative;
-    top: 0;
-    right: -11.8rem;
-    margin: auto;
+    margin-top: 0;
+    margin-left: 3.5em;
+    width: 40%;
+    margin-left: -4.5rem;
   }
   .card__3__green__square {
-    display: grid;
-    place-items: center;
-    background-color: #55dfb4;
-    border: 1px solid #e8e9ed;
-    width: 27.5rem;
-    height: 23rem;
-    border-radius: 5px;
+    height: 100%;
+    max-height: unset;
+    top: 0px;
   }
   .card__3__green__trumpet {
-    display: flex;
-    position: relative;
-    top: 1.5rem;
-    right: -0.5rem;
-    margin: auto;
+    margin-top: 6.8rem;
   }
   .card__3__text {
     display: block;
-    margin-top: 5rem;
-    margin-left: -12rem;
+    margin-top: 4rem;
+    margin-left: 21.4rem;
     max-width: 26rem;
     position: relative;
-    left: 15.7rem;
+    left: -17.8rem;
+  }
+  .card__3__text__h2 {
+    width: 21rem;
+  }
+  .card__3__text__h3 {
+    width: 27rem;
+  }
+  .card__3__text__line {
+    width: 20.478rem;
+    border: 2px solid #55dfb4;
+    margin-top: 2rem;
+  }
+  .card__space__bottom {
+    border: none;
+    padding-bottom: 6rem;
   }
 }
 ul {
@@ -802,6 +813,95 @@ li {
   right: 0;
 }
 
+@media only screen and (min-width: 1000px) {
+  .pricing__general {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pricing__red {
+    margin: 4rem 4rem 7rem;
+    width: 23.25rem;
+    height: 25rem;
+  }
+  .pricing__red:hover {
+    transform: scale(108%);
+    border-radius: 18px;
+    border: 1px;
+    border: 1px solid #fb3b64;
+    box-shadow: 5px 10px 27px -10px #fb3b64;
+  }
+  .pricing__red__basic {
+    margin-left: 7.5rem;
+    padding-right: 5rem;
+    margin-top: 3rem;
+  }
+  .pricing__red__list {
+    padding-left: 3rem;
+  }
+  .pricing__red__button {
+    position: relative;
+    bottom: 13.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  .pricing__blue {
+    margin: 4rem 4rem 7rem;
+    width: 23.25rem;
+    height: 25rem;
+  }
+  .pricing__blue:hover {
+    transform: scale(108%);
+    border-radius: 18px;
+    border: 1px;
+    border: 1px solid rgba(7, 172, 230, 0.2901960784);
+    box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
+  }
+  .pricing__blue__professional {
+    margin-left: 5.5rem;
+    padding-right: 5rem;
+    margin-top: 3rem;
+  }
+  .pricing__blue__list {
+    padding-left: 5.5rem;
+  }
+  .pricing__blue__button {
+    position: relative;
+    bottom: 14.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  .pricing__green {
+    margin: 4rem 4rem 7rem;
+    width: 23.25rem;
+    height: 25rem;
+  }
+  .pricing__green:hover {
+    transform: scale(108%);
+    border-radius: 18px;
+    border: 1px;
+    border: 1px solid #55dfb4;
+    box-shadow: 5px 10px 27px 0px #55dfb4;
+  }
+  .pricing__green__premium {
+    margin-left: 6.5rem;
+    padding-right: 5rem;
+    margin-top: 3rem;
+  }
+  .pricing__green__list {
+    padding-left: 4.5rem;
+  }
+  .pricing__green__button {
+    position: relative;
+    bottom: 14.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+}
 .form {
   margin-top: 20%;
   margin-right: auto;
@@ -822,8 +922,9 @@ li {
   font-weight: 400;
 }
 .form__information {
-  margin-top: 10%;
-  margin-bottom: 15%;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding-right: 6rem;
 }
 .form__information__h4 {
   font-family: "Open Sans";
@@ -886,6 +987,7 @@ li {
   margin-top: 2rem;
   margin-left: 5.4rem;
   margin-bottom: 3rem;
+  color: white;
 }
 
 input[type=checkbox]:checked {
@@ -909,6 +1011,44 @@ input[type=checkbox] {
   font-size: 1em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .form {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .form__left {
+    margin-right: -3rem;
+    margin-top: -14rem;
+  }
+  .form__question__h2 {
+    font-size: 3.063rem;
+  }
+  .form__information {
+    display: inline-flex;
+  }
+  .form__information__h4 {
+    margin-right: 2rem;
+  }
+  .form__data__h5__name {
+    width: 27.5rem;
+  }
+  .form__data__h5__email {
+    width: 27.5rem;
+  }
+  .form .consent {
+    margin-top: 1.5rem;
+  }
+  .form .consent__checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .form .consent__text {
+    width: 25.3rem;
+  }
+}
 .footer {
   position: relative;
   width: 100%;
@@ -946,6 +1086,12 @@ input[type=checkbox] {
   margin-right: 1.2rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer__text {
+    padding-top: 1.2rem;
+    margin-left: 5rem;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
