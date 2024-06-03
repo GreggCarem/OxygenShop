@@ -578,10 +578,17 @@
   .card__3__green__square {
     height: 100%;
     max-height: unset;
-    top: 0px;
+    position: relative;
+    top: -23rem;
   }
   .card__3__green__trumpet {
     margin-top: 6.8rem;
+  }
+  .card__3__grey__square {
+    width: 10rem;
+    height: 100%;
+    background-color: #f7f7f7;
+    transform: translateX(-4rem);
   }
   .card__3__text {
     display: block;

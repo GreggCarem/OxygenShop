@@ -285,13 +285,18 @@
         &__square {
           height: 100%;
           max-height: unset;
-          top: 0px;
+          position: relative;
+          top: -23rem;
         }
         &__trumpet {
           margin-top: 6.8rem;
         }
       }
       &__grey__square {
+        width: 10rem;
+        height: 100%;
+        background-color: #f7f7f7;
+        transform: translateX(-4rem);
       }
 
       &__text {
