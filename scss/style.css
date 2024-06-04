@@ -432,7 +432,8 @@
 }
 .card__3__text {
   display: block;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
 }
 .card__3__text__h2 {
   font-family: Raleway;
@@ -846,6 +847,7 @@ li {
   }
   .pricing__red__list {
     padding-left: 3rem;
+    text-align: center;
   }
   .pricing__red__button {
     position: relative;
@@ -873,6 +875,7 @@ li {
   }
   .pricing__blue__list {
     padding-left: 5.5rem;
+    text-align: center;
   }
   .pricing__blue__button {
     position: relative;
@@ -900,6 +903,7 @@ li {
   }
   .pricing__green__list {
     padding-left: 4.5rem;
+    text-align: center;
   }
   .pricing__green__button {
     position: relative;
@@ -1002,7 +1006,7 @@ input[type=checkbox]:checked {
 }
 
 input[type=checkbox]:checked:after {
-  content: url(/resources/Checkmark.png);
+  content: url(https://raw.githubusercontent.com/GreggCarem/OxygenShop/main/resources/Checkmark.png);
   width: 2rem;
   color: #08a6e4;
 }
