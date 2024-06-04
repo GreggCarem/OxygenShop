@@ -92,15 +92,15 @@
     }
   }
 }
-input[type="checkbox"]:checked {
+input[type="checkbox-consent"]:checked {
   background-color: #ffffff;
 }
-input[type="checkbox"]:checked:after {
-  content: url(/resources/Checkmark.png);
+input[type="checkbox-consent"]:checked:after {
+  content: url(resources/Checkmark.png);
   width: 2rem;
   color: #08a6e4;
 }
-input[type="checkbox"] {
+input[type="checkbox-consent"] {
   appearance: none;
   text-align: center;
   display: table-cell;
