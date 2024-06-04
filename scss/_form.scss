@@ -96,7 +96,9 @@ input[type="checkbox"]:checked {
   background-color: #ffffff;
 }
 input[type="checkbox"]:checked:after {
-  content: url(resources/Checkmark.png);
+  // content: url(/resources/Checkmark.png);
+  background-image: url(/resources/Checkmark.png);
+
   width: 2rem;
   color: #08a6e4;
 }
