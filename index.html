@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OXYGENShop</title>
+
     <link rel="stylesheet" href="scss/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -14,26 +15,38 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/header.js" defer></script>
+    <script src="js/scroller.js" defer></script>
+    <script src="js/too--top.js" defer></script>
   </head>
   <body>
-    <nav class="nav">
-      <h1 class="nav__h1">OXYGENShop</h1>
-      <img class="nav__image" src="./resources/Menu.png" alt="menu" />
-      <ul class="nav__list">
-        <h2 class="nav__list__h2">
-          <li><a class="nav__list__link" href="http://">WHY US</a></li>
-        </h2>
-        <h2 class="nav__list__h2">
-          <li><a class="nav__list__link" href="http://">BENEFITS</a></li>
-        </h2>
-        <h2 class="nav__list__h2">
-          <li><a class="nav__list__link" href="http://">PRICES</a></li>
-        </h2>
-        <h2 class="nav__list__h2">
-          <li><a class="nav__list__link" href="http://">CONTACTS</a></li>
-        </h2>
+    <div class="scroller">
+      <div class="scroller__inner"></div>
+    </div>
+    <header id="us" class="header">
+      <h2 class="header__h2">OXYGENShop</h2>
+      <a id="navMenu">
+        <img
+          class="header__img"
+          src="resources/Menu.png"
+          alt="menu"
+          id="heads"
+        />
+      </a>
+      <ul id="nav">
+        <li><a href="#us">WHY US</a></li>
+        <li><a href="#benefits">BENEFITS</a></li>
+        <li><a href="#pricing">PRICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
-    </nav>
+      <ul class="header__big">
+        <li><a href="#us">WHY US</a></li>
+        <li><a href="#benefits">BENEFITS</a></li>
+        <li><a href="#pricing">PRICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </header>
+
     <main>
       <section class="sell__more">
         <h2 class="sell__more__h2">Sell More!</h2>
@@ -398,6 +411,13 @@
             <button class="consent__button">Send</button>
           </div>
         </div>
+        <button id="btnScrollToTop" class="too__top">
+          <img
+            class="too__top__arrow"
+            src="./resources/bow-arrow-up.svg"
+            alt="arrow"
+          />
+        </button>
       </section>
       <footer class="footer">
         <div class="footer__text">
