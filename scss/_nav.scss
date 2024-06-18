@@ -70,14 +70,14 @@
         display: block;
         text-decoration: none;
         padding-inline: 1em;
-        padding-bottom: 2.2em;
+        //padding-bottom: 2.2em;
         padding-top: 2.2em;
         cursor: pointer;
         color: rgb(192, 192, 192);
 
         &:hover {
           color: black;
-          padding-bottom: 1.85em;
+          padding-bottom: 1em;
           border-bottom: 4px solid rgb(1, 178, 243);
         }
       }

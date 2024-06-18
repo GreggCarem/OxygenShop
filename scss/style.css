@@ -64,14 +64,13 @@
   display: block;
   text-decoration: none;
   padding-inline: 1em;
-  padding-bottom: 2.2em;
   padding-top: 2.2em;
   cursor: pointer;
   color: rgb(192, 192, 192);
 }
 .header__big li a:hover {
   color: black;
-  padding-bottom: 1.85em;
+  padding-bottom: 1em;
   border-bottom: 4px solid rgb(1, 178, 243);
 }
 @media only screen and (min-width: 1000px) {
@@ -990,12 +989,13 @@ li {
   text-align: left;
   color: #08a6e4;
   margin-bottom: 1.5rem;
+  margin-top: 3rem;
 }
 .form__data__h5__name {
   border: none;
   width: 19.5rem;
   border-bottom: 0.063rem solid #95989a;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .form__data__h5__email {
   border: none;
@@ -1056,6 +1056,24 @@ input[type=checkbox] {
   font-size: 1em;
 }
 
+.input__controll input:focus {
+  outline: 0;
+}
+
+.input__controll.error input {
+  border-color: rgb(208, 12, 12);
+}
+
+.input__controll.error {
+  color: red;
+}
+
+.input__controll .error {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: -0.5rem;
+}
+
 @media only screen and (min-width: 1000px) {
   .form {
     margin-top: 8%;
@@ -1067,6 +1085,9 @@ input[type=checkbox] {
   .form__left {
     margin-right: -3rem;
     margin-top: -14rem;
+  }
+  .form__right {
+    margin-bottom: 3rem;
   }
   .form__question__h2 {
     font-size: 3.063rem;
@@ -1155,12 +1176,12 @@ input[type=checkbox] {
 
 .too__top {
   width: 3rem;
-  height: 4rem;
+  height: 3rem;
   border: none;
-  border-radius: 35px;
+  border-radius: 89px;
   background-color: #08a6e4;
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
-  right: -1.5rem;
+  right: 0.5rem;
   position: fixed;
   bottom: 3rem;
   cursor: pointer;
@@ -1169,17 +1190,15 @@ input[type=checkbox] {
   z-index: 20;
 }
 .too__top:hover {
-  transform: scale(108%);
-  border-radius: 18px;
-  border: 1px;
   border: 1px solid #084a64;
-  box-shadow: 5px 10px 27px 0px #242525;
+  box-shadow: 5px 10px 27px 0px #084a64;
+  height: 5rem;
+  width: 3rem;
 }
 .too__top__arrow {
   width: auto;
-  height: 3rem;
-  margin-top: 0.4rem;
-  margin-left: -1rem;
+  height: 2.5rem;
+  margin-top: 0.2rem;
 }
 
 .too__top.active {

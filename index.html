@@ -18,6 +18,7 @@
     <script src="js/header.js" defer></script>
     <script src="js/scroller.js" defer></script>
     <script src="js/too--top.js" defer></script>
+    <script src="js/form--validation.js" defer></script>
   </head>
   <body>
     <div class="scroller">
@@ -208,6 +209,7 @@
 
       <section class="pricing">
         <h2 class="pricing__h2">Pricing</h2>
+
         <div class="pricing__general">
           <div class="pricing__red">
             <div class="pricing__red__basic">
@@ -353,72 +355,89 @@
           </div>
         </div>
       </section>
-      <section class="form">
-        <div class="form__left">
-          <div class="form__question">
-            <h2 class="form__question__h2">Any questions?</h2>
-            <h3 class="form__question__h3">
-              Leave your email address or call us!
-            </h3>
+      <form id="form__main" action="/">
+        <section class="form">
+          <div class="form__left">
+            <div class="form__question">
+              <h2 class="form__question__h2">Any questions?</h2>
+              <h3 class="form__question__h3">
+                Leave your email address or call us!
+              </h3>
+            </div>
+            <div class="form__information">
+              <h4 class="form__information__h4">
+                <img
+                  class="form__information__image"
+                  src="./resources/Mail-icon.png"
+                  alt="mail"
+                />gregor.ten1@gmail.com
+              </h4>
+              <h4 class="form__information__h4">
+                <img
+                  class="form__information__image"
+                  src="./resources/Phone-icon.png"
+                  alt="phone"
+                />686543354
+              </h4>
+            </div>
           </div>
-          <div class="form__information">
-            <h4 class="form__information__h4">
-              <img
-                class="form__information__image"
-                src="./resources/Mail-icon.png"
-                alt="mail"
-              />gregor.ten1@gmail.com
-            </h4>
-            <h4 class="form__information__h4">
-              <img
-                class="form__information__image"
-                src="./resources/Phone-icon.png"
-                alt="phone"
-              />686543354
-            </h4>
+
+          <div class="form__right">
+            <form id="form_data" class="form__data">
+              <h5 class="form__data__h5">NAME</h5>
+              <div class="input__controll">
+                <input
+                  class="form__data__h5__name"
+                  type="text"
+                  id="name"
+                  name="name"
+                />
+                <div class="error"></div>
+              </div>
+
+              <h5 class="form__data__h5">EMAIL</h5>
+              <div class="input__controll">
+                <input
+                  class="form__data__h5__email"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+                <div class="error"></div>
+              </div>
+            </form>
+            <div class="consent">
+              <label id="checkbox">
+                <div class="input__controll">
+                  <input
+                    class="consent__checkbox"
+                    type="checkbox"
+                    id="consent"
+                  />
+                </div>
+              </label>
+
+              <h6 class="consent__text">
+                I hereby give consent for my personal data included in my
+                application to be processed for the purposes of the recruitment
+                process under the European Parliament’s and Council of the
+                European Union Regulation on the Protection of Natural Persons
+                as of 27 April 2016, with regard to the processing of personal
+                data and on the free movement of such data, and repealing
+                Directive 95/46/EC (Data Protection Directive)
+              </h6>
+              <button type="submit" class="consent__button">Send</button>
+            </div>
           </div>
-        </div>
-        <div class="form__right">
-          <form class="form__data">
-            <h5 class="form__data__h5">NAME</h5>
-            <input
-              class="form__data__h5__name"
-              type="text"
-              id="name"
-              name="name"
+          <button id="btnScrollToTop" class="too__top">
+            <img
+              class="too__top__arrow"
+              src="./resources/bow-arrow-up.svg"
+              alt="arrow"
             />
-            <h5 class="form__data__h5">EMAIL</h5>
-            <input
-              class="form__data__h5__email"
-              type="email"
-              id="email"
-              name="email"
-            />
-          </form>
-          <div class="consent">
-            <label id="checkbox">
-              <input class="consent__checkbox" type="checkbox" id="consent" />
-            </label>
-            <h6 class="consent__text">
-              I hereby give consent for my personal data included in my
-              application to be processed for the purposes of the recruitment
-              process under the European Parliament’s and Council of the
-              European Union Regulation on the Protection of Natural Persons as
-              of 27 April 2016, with regard to the processing of personal data
-              and on the free movement of such data, and repealing Directive
-              95/46/EC (Data Protection Directive)
-            </h6>
-            <button class="consent__button">Send</button>
-          </div>
-        </div>
-        <button id="btnScrollToTop" class="too__top">
-          <img
-            class="too__top__arrow"
-            src="./resources/bow-arrow-up.svg"
-            alt="arrow"
-          />
-        </button>
-      </section>
+          </button>
+        </section>
+      </form>
       <footer class="footer">
         <div class="footer__text">
           <h1 class="footer__text__h1">OXYGENShop</h1>
