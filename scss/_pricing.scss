@@ -212,6 +212,30 @@ li {
   }
 }
 
+.converter {
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  &__currency {
+    background-color: #a5e8ff;
+    border: none;
+    border-radius: 22%;
+    cursor: pointer;
+    width: 5rem;
+    height: fit-content;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+}
+.converter__currency:active {
+  background-color: none;
+  color: #00bfff;
+}
+
 @media only screen and (min-width: 1000px) {
   .pricing {
     &__general {

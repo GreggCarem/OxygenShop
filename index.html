@@ -19,10 +19,31 @@
     <script src="js/scroller.js" defer></script>
     <script src="js/too--top.js" defer></script>
     <script src="js/form--validation.js" defer></script>
+    <script src="js/pop--up.js" defer></script>
+    <script src="js/converter.js" defer></script>
   </head>
   <body>
     <div class="scroller">
       <div class="scroller__inner"></div>
+    </div>
+
+    <div class="modal--container" id="modal--container">
+      <form class="popup" action="/">
+        <h1 class="popup__h1">Subscribe to our newsletter!</h1>
+        <button class="close">
+          <img src="/resources/Cross.png" alt="cross" class="cross__image" />
+        </button>
+        <h5 class="popup__h5">EMAIL</h5>
+
+        <input
+          class="email__modal"
+          type="email"
+          id="email__modal"
+          name="email"
+        />
+        <div class="error"></div>
+        <button type="submit" class="popup__submit">Submit</button>
+      </form>
     </div>
     <header id="us" class="header">
       <h2 class="header__h2">OXYGENShop</h2>
@@ -210,11 +231,17 @@
       <section class="pricing">
         <h2 class="pricing__h2">Pricing</h2>
 
+        <div id="units" class="converter">
+          <h6 class="converter__currency">EUR</h6>
+          <h6 class="converter__currency">USD</h6>
+          <h6 class="converter__currency">GBP</h6>
+        </div>
+
         <div class="pricing__general">
           <div class="pricing__red">
             <div class="pricing__red__basic">
               <h3 class="pricing__red__basic__h3">Basic</h3>
-              <h4 class="pricing__red__basic__h4">$0</h4>
+              <h4 id="basic" class="pricing__red__basic__h4">$0</h4>
             </div>
 
             <div class="pricing__red__list">
@@ -262,7 +289,9 @@
           <div class="pricing__blue">
             <div class="pricing__blue__professional">
               <h3 class="pricing__blue__professional__h3">Professional</h3>
-              <h4 class="pricing__blue__professional__h4">$25</h4>
+              <h4 id="professional" class="pricing__blue__professional__h4">
+                $25
+              </h4>
               <h5 class="pricing__blue__professional__h5">Limited offer</h5>
             </div>
             <div class="pricing__blue__list">
@@ -309,7 +338,7 @@
           <div class="pricing__green">
             <div class="pricing__green__premium">
               <h3 class="pricing__green__premium__h3">Premium</h3>
-              <h4 class="pricing__green__premium__h4">$60</h4>
+              <h4 id="premium" class="pricing__green__premium__h4">$60</h4>
               <h5 class="pricing__green__premium__h5">Limited offer</h5>
             </div>
             <div class="pricing__green__list">
