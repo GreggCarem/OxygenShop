@@ -1223,6 +1223,12 @@ input[type=checkbox] {
   width: auto;
   height: 2.5rem;
   margin-top: 0.2rem;
+  margin-left: 0.25rem;
+}
+.too__top__arrow:hover {
+  height: 4rem;
+  margin-top: 0.3rem;
+  margin-left: -0.5rem;
 }
 
 .too__top.active {
