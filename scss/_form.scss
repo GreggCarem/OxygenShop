@@ -44,11 +44,12 @@
       text-align: left;
       color: #08a6e4;
       margin-bottom: 1.5rem;
+      margin-top: 3rem;
       &__name {
         border: none;
         width: 19.5rem;
         border-bottom: 0.063rem solid #95989a;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
       }
       &__email {
         border: none;
@@ -112,6 +113,23 @@ input[type="checkbox"] {
   font-size: 1em;
 }
 
+.input__controll input:focus {
+  outline: 0;
+}
+.input__controll.error input {
+  border-color: rgb(208, 12, 12);
+}
+
+.input__controll.error {
+  color: red;
+}
+
+.input__controll .error {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: -0.5rem;
+}
+
 @media only screen and (min-width: 1000px) {
   .form {
     margin-top: 8%;
@@ -123,8 +141,11 @@ input[type="checkbox"] {
       margin-right: -3rem;
       margin-top: -14rem;
     }
+
     &__right {
+      margin-bottom: 3rem;
     }
+
     &__question {
       &__h2 {
         font-size: 3.063rem;

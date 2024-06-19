@@ -1,4 +1,4 @@
-.nav {
+.header {
   display: inline-block;
   padding-inline: 1em;
   padding-bottom: 1.05em;
@@ -8,62 +8,104 @@
   margin-bottom: 5em;
   position: relative;
 
-  &__h1 {
-    font-family: raleway;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 2rem;
-
-    color: #08a6e4;
+  &__h2 {
+    width: fit-content;
     display: inline-block;
+    font-family: Raleway;
+    font-weight: 400;
+    color: rgb(1, 178, 243);
+    font-size: 1.4rem;
   }
-  &__image {
-    height: 0.75rem;
+
+  &__img {
     position: absolute;
     right: 20px;
     top: 25px;
   }
-  &__list {
-    visibility: hidden;
+
+  #nav {
     display: none;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    list-style-type: none;
+    margin-top: 2em;
+    font-family: Open Sans;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
 
-    height: 3.7rem;
-    width: 100%;
+    li {
+      padding-top: 0.9em;
+      padding-bottom: 0.5em;
+      padding-left: 0.4em;
 
-    &__h1 {
-      padding-left: 5rem;
+      a {
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+        color: rgb(192, 192, 192);
+
+        &:hover {
+          color: black;
+        }
+      }
     }
-    &__image {
-      visibility: hidden;
+  }
+
+  &__big {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    margin-right: 4%;
+    width: 100%;
+    display: none;
+    font-family: Open Sans;
+    font-size: 0.65rem;
+    font-weight: 700;
+
+    li {
+      padding-inline: 1em;
+
+      a {
+        letter-spacing: 0.3em;
+        display: block;
+        text-decoration: none;
+        padding-inline: 1em;
+        //padding-bottom: 2.2em;
+        padding-top: 2.2em;
+        cursor: pointer;
+        color: rgb(192, 192, 192);
+
+        &:hover {
+          color: black;
+          padding-bottom: 1em;
+          border-bottom: 4px solid rgb(1, 178, 243);
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    padding: 0;
+    padding-inline: 0;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 0;
+
+    &__img {
       display: none;
     }
-    &__list {
-      visibility: visible;
+
+    &__h2 {
+      padding-left: 0;
+      margin-left: 4%;
       display: inline-flex;
-      &__link {
-        text-decoration: none;
-        color: #a5a5a5;
-        font-family: Open Sans;
-        font-size: 0.688rem;
-        font-weight: 700;
-        letter-spacing: 0.205rem;
-        text-align: center;
-        margin-right: 5rem;
-        margin-top: 1rem;
-        vertical-align: sub;
-      }
-      &__link:hover {
-        color: black;
-        padding-bottom: 1.85em;
-        border-bottom: 4px solid rgb(1, 178, 243);
-      }
+      justify-content: flex-start;
+    }
+
+    &__big {
+      display: inline-flex;
+      justify-content: flex-end;
     }
   }
 }

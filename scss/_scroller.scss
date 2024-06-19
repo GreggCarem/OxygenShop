@@ -1,0 +1,16 @@
+.scroller {
+  position: fixed;
+  height: 0.3rem;
+  width: 100%;
+  left: 0;
+  background-color: transparent;
+  z-index: 20;
+
+  &__inner {
+    height: 100%;
+    position: relative;
+    width: 0;
+    padding: 0%;
+    background-color: rgb(1, 178, 243);
+  }
+}

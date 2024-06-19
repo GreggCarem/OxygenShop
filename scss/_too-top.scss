@@ -1,0 +1,30 @@
+.too__top {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 89px;
+  background-color: #08a6e4;
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
+  right: 0.5rem;
+  position: fixed;
+  bottom: 3rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 20;
+  &:hover {
+    border: 1px solid #084a64;
+    box-shadow: 5px 10px 27px 0px #084a64;
+    height: 5rem;
+    width: 3rem;
+  }
+
+  &__arrow {
+    width: auto;
+    height: 2.5rem;
+    margin-top: 0.2rem;
+  }
+}
+.too__top.active {
+  opacity: 1;
+}

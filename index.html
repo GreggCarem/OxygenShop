@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OXYGENShop</title>
+
     <link rel="stylesheet" href="scss/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -14,26 +15,61 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/header.js" defer></script>
+    <script src="js/scroller.js" defer></script>
+    <script src="js/too--top.js" defer></script>
+    <script src="js/form--validation.js" defer></script>
+    <script src="js/pop--up.js" defer></script>
+    <script src="js/converter.js" defer></script>
+    <script src="js/slider.js" defer></script>
   </head>
   <body>
-    <nav class="nav">
-      <h1 class="nav__h1">OXYGENShop</h1>
-      <img class="nav__image" src="./resources/Menu.png" alt="menu" />
-      <ul class="nav__list">
-        <h2 class="nav__list__h2">
-          <li><a class="nav__list__link" href="http://">WHY US</a></li>
-        </h2>
-        <h2 class="nav__list__h2">
-          <li><a class="nav__list__link" href="http://">BENEFITS</a></li>
-        </h2>
-        <h2 class="nav__list__h2">
-          <li><a class="nav__list__link" href="http://">PRICES</a></li>
-        </h2>
-        <h2 class="nav__list__h2">
-          <li><a class="nav__list__link" href="http://">CONTACTS</a></li>
-        </h2>
+    <div class="scroller">
+      <div class="scroller__inner"></div>
+    </div>
+
+    <div class="modal--container" id="modal--container">
+      <form class="popup" action="/">
+        <h1 class="popup__h1">Subscribe to our newsletter!</h1>
+        <button class="close">
+          <img src="/resources/Cross.png" alt="cross" class="cross__image" />
+        </button>
+        <h5 class="popup__h5">EMAIL</h5>
+
+        <input
+          class="email__modal"
+          type="email"
+          id="email__modal"
+          name="email"
+        />
+        <div class="error"></div>
+        <button type="submit" class="popup__submit">Submit</button>
+      </form>
+    </div>
+    <header id="us" class="header">
+      <h2 class="header__h2">OXYGENShop</h2>
+      <a id="navMenu">
+        <img
+          class="header__img"
+          src="resources/Menu.png"
+          alt="menu"
+          id="heads"
+        />
+      </a>
+      <ul id="nav">
+        <li><a href="#us">WHY US</a></li>
+        <li><a href="#benefits">BENEFITS</a></li>
+        <li><a href="#pricing">PRICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
-    </nav>
+      <ul class="header__big">
+        <li><a href="#us">WHY US</a></li>
+        <li><a href="#benefits">BENEFITS</a></li>
+        <li><a href="#pricing">PRICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </header>
+
     <main>
       <section class="sell__more">
         <h2 class="sell__more__h2">Sell More!</h2>
@@ -195,11 +231,18 @@
 
       <section class="pricing">
         <h2 class="pricing__h2">Pricing</h2>
+
+        <div id="units" class="converter">
+          <h6 class="converter__currency">EUR</h6>
+          <h6 class="converter__currency">USD</h6>
+          <h6 class="converter__currency">GBP</h6>
+        </div>
+
         <div class="pricing__general">
           <div class="pricing__red">
             <div class="pricing__red__basic">
               <h3 class="pricing__red__basic__h3">Basic</h3>
-              <h4 class="pricing__red__basic__h4">$0</h4>
+              <h4 id="basic" class="pricing__red__basic__h4">$0</h4>
             </div>
 
             <div class="pricing__red__list">
@@ -247,7 +290,9 @@
           <div class="pricing__blue">
             <div class="pricing__blue__professional">
               <h3 class="pricing__blue__professional__h3">Professional</h3>
-              <h4 class="pricing__blue__professional__h4">$25</h4>
+              <h4 id="professional" class="pricing__blue__professional__h4">
+                $25
+              </h4>
               <h5 class="pricing__blue__professional__h5">Limited offer</h5>
             </div>
             <div class="pricing__blue__list">
@@ -294,7 +339,7 @@
           <div class="pricing__green">
             <div class="pricing__green__premium">
               <h3 class="pricing__green__premium__h3">Premium</h3>
-              <h4 class="pricing__green__premium__h4">$60</h4>
+              <h4 id="premium" class="pricing__green__premium__h4">$60</h4>
               <h5 class="pricing__green__premium__h5">Limited offer</h5>
             </div>
             <div class="pricing__green__list">
@@ -340,65 +385,97 @@
           </div>
         </div>
       </section>
-      <section class="form">
-        <div class="form__left">
-          <div class="form__question">
-            <h2 class="form__question__h2">Any questions?</h2>
-            <h3 class="form__question__h3">
-              Leave your email address or call us!
-            </h3>
-          </div>
-          <div class="form__information">
-            <h4 class="form__information__h4">
-              <img
-                class="form__information__image"
-                src="./resources/Mail-icon.png"
-                alt="mail"
-              />gregor.ten1@gmail.com
-            </h4>
-            <h4 class="form__information__h4">
-              <img
-                class="form__information__image"
-                src="./resources/Phone-icon.png"
-                alt="phone"
-              />686543354
-            </h4>
-          </div>
-        </div>
-        <div class="form__right">
-          <form class="form__data">
-            <h5 class="form__data__h5">NAME</h5>
-            <input
-              class="form__data__h5__name"
-              type="text"
-              id="name"
-              name="name"
-            />
-            <h5 class="form__data__h5">EMAIL</h5>
-            <input
-              class="form__data__h5__email"
-              type="email"
-              id="email"
-              name="email"
-            />
-          </form>
-          <div class="consent">
-            <label id="checkbox">
-              <input class="consent__checkbox" type="checkbox" id="consent" />
-            </label>
-            <h6 class="consent__text">
-              I hereby give consent for my personal data included in my
-              application to be processed for the purposes of the recruitment
-              process under the European Parliament’s and Council of the
-              European Union Regulation on the Protection of Natural Persons as
-              of 27 April 2016, with regard to the processing of personal data
-              and on the free movement of such data, and repealing Directive
-              95/46/EC (Data Protection Directive)
-            </h6>
-            <button class="consent__button">Send</button>
-          </div>
+      <section>
+        <div class="slider" id="images">
+          <img alt="elephant" src="resources/elephant.jpg" />
+          <img alt="graffiti" src="resources/rabbit.jpg" />
+          <img alt="ice" src="resources/ice.jpg" />
+          <img alt="owl" src="resources/owl.jpg" />
         </div>
       </section>
+      <form id="form__main" action="/">
+        <section class="form">
+          <div class="form__left">
+            <div class="form__question">
+              <h2 class="form__question__h2">Any questions?</h2>
+              <h3 class="form__question__h3">
+                Leave your email address or call us!
+              </h3>
+            </div>
+            <div class="form__information">
+              <h4 class="form__information__h4">
+                <img
+                  class="form__information__image"
+                  src="./resources/Mail-icon.png"
+                  alt="mail"
+                />gregor.ten1@gmail.com
+              </h4>
+              <h4 class="form__information__h4">
+                <img
+                  class="form__information__image"
+                  src="./resources/Phone-icon.png"
+                  alt="phone"
+                />686543354
+              </h4>
+            </div>
+          </div>
+
+          <div class="form__right">
+            <form id="form_data" class="form__data">
+              <h5 class="form__data__h5">NAME</h5>
+              <div class="input__controll">
+                <input
+                  class="form__data__h5__name"
+                  type="text"
+                  id="name"
+                  name="name"
+                />
+                <div class="error"></div>
+              </div>
+
+              <h5 class="form__data__h5">EMAIL</h5>
+              <div class="input__controll">
+                <input
+                  class="form__data__h5__email"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+                <div class="error"></div>
+              </div>
+            </form>
+            <div class="consent">
+              <label id="checkbox">
+                <div class="input__controll">
+                  <input
+                    class="consent__checkbox"
+                    type="checkbox"
+                    id="consent"
+                  />
+                </div>
+              </label>
+
+              <h6 class="consent__text">
+                I hereby give consent for my personal data included in my
+                application to be processed for the purposes of the recruitment
+                process under the European Parliament’s and Council of the
+                European Union Regulation on the Protection of Natural Persons
+                as of 27 April 2016, with regard to the processing of personal
+                data and on the free movement of such data, and repealing
+                Directive 95/46/EC (Data Protection Directive)
+              </h6>
+              <button type="submit" class="consent__button">Send</button>
+            </div>
+          </div>
+          <button id="btnScrollToTop" class="too__top">
+            <img
+              class="too__top__arrow"
+              src="./resources/bow-arrow-up.svg"
+              alt="arrow"
+            />
+          </button>
+        </section>
+      </form>
       <footer class="footer">
         <div class="footer__text">
           <h1 class="footer__text__h1">OXYGENShop</h1>
