@@ -10,7 +10,7 @@ function changeNav() {
     navIcon.src = "resources/Menu.png";
   } else {
     nav.style.display = "block";
-    navIcon.src = "resources/cross.png";
+    navIcon.src = "./resources/cross__blue.png";
   }
 }
 

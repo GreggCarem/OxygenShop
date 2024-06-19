@@ -16,8 +16,8 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 3em;
-    height: 3em;
+    width: 3rem;
+    height: 3rem;
     border-radius: 40%;
     border: 2px solid rgba(255, 255, 255, 0.651);
     background-color: rgba(0, 0, 0, 0.397);
@@ -31,13 +31,13 @@
   }
 
   &__rightBtn {
-    right: 1em;
+    right: 1rem;
   }
 
   &__index {
     display: inline-flex;
     position: absolute;
-    bottom: 1em;
+    bottom: 1rem;
     right: 0;
     left: 0;
     margin: auto;
@@ -46,8 +46,8 @@
     &__point {
       display: inline-flex;
       align-items: center;
-      height: 1.3em;
-      padding-inline: 0.2em;
+      height: 1.3rem;
+      padding-inline: 0.2rem;
       color: rgba(255, 255, 255, 0.651);
       cursor: pointer;
     }

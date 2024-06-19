@@ -63,7 +63,7 @@ class Slider {
 
     setInterval(() => {
       nextImage();
-    }, 10000);
+    }, 20000);
   }
 
   get id() {

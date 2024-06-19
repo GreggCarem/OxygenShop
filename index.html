@@ -32,7 +32,7 @@
       <form class="popup" action="/">
         <h1 class="popup__h1">Subscribe to our newsletter!</h1>
         <button class="close">
-          <img src="/resources/Cross.png" alt="cross" class="cross__image" />
+          <img src="./resources/Cross.png" alt="cross" class="cross__image" />
         </button>
         <h5 class="popup__h5">EMAIL</h5>
 
@@ -233,9 +233,9 @@
         <h2 class="pricing__h2">Pricing</h2>
 
         <div id="units" class="converter">
-          <h6 class="converter__currency">EUR</h6>
-          <h6 class="converter__currency">USD</h6>
-          <h6 class="converter__currency">GBP</h6>
+          <h6 class="converter__currency" id="converter__eur">EUR</h6>
+          <h6 class="converter__currency" id="converter__usd">USD</h6>
+          <h6 class="converter__currency" id="converter__gbd">GBP</h6>
         </div>
 
         <div class="pricing__general">
@@ -467,13 +467,13 @@
               <button type="submit" class="consent__button">Send</button>
             </div>
           </div>
-          <button id="btnScrollToTop" class="too__top">
+          <section id="btnScrollToTop" class="too__top">
             <img
               class="too__top__arrow"
               src="./resources/bow-arrow-up.svg"
               alt="arrow"
             />
-          </button>
+          </section>
         </section>
       </form>
       <footer class="footer">
