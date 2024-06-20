@@ -10,21 +10,18 @@ document
     const nameError = name.nextElementSibling;
     const emailError = email.nextElementSibling;
 
-    // Reset  styles
     nameError.textContent = "";
     emailError.textContent = "";
     name.parentElement.classList.remove("error");
     email.parentElement.classList.remove("error");
     consent.parentElement.classList.remove("error");
 
-    // Validate name
     if (name.value.length < 2 || name.value.length > 100) {
       name.parentElement.classList.add("error");
       nameError.textContent = "Invalid Name";
       valid = false;
     }
 
-    // Validate email
     const emailPattern =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!emailPattern.test(email.value)) {
@@ -33,7 +30,6 @@ document
       valid = false;
     }
 
-    // Validate consent
     if (!consent.checked) {
       consent.parentElement.classList.add("error");
       consent.parentElement.nextElementSibling.textContent =
@@ -41,7 +37,6 @@ document
       valid = false;
     }
 
-    // If valid, send form data
     if (valid) {
       const formData = {
         name: name.value,
