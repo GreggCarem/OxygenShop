@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalContainer = document.getElementById("modal--container");
   const closeButton = document.querySelector(".close");
   const popupForm = document.querySelector(".popup");
+  const alert = document.getElementById("alert");
 
   const isModalClosed = () => localStorage.getItem("modalClosed") === "true";
 
@@ -65,7 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
-          alert("Thank you for subscribing!");
+          alert.style.display = "block";
+          setTimeout(() => {
+            alert.style.display = "none";
+          }, 2000);
           closeModal();
         });
     } else {

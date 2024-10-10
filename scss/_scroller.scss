@@ -14,3 +14,22 @@
     background-color: rgb(1, 178, 243);
   }
 }
+
+.alert {
+  position: fixed;
+  background-color: rgb(1, 178, 243);
+  width: 18rem;
+  border-radius: 50px;
+  display: none;
+  align-items: center;
+  align-self: center;
+  z-index: 30;
+  top: 5rem;
+  right: 1rem;
+
+  &__h1 {
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+  }
+}

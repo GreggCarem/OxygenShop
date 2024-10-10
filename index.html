@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,11 +28,18 @@
       <div class="scroller__inner"></div>
     </div>
 
+    <div id="alert" class="alert">
+      <h1 class="alert__h1">Thank You for Subscribing!</h1>
+    </div>
     <div class="modal--container" id="modal--container">
       <form class="popup" action="/">
         <h1 class="popup__h1">Subscribe to our newsletter!</h1>
         <button class="close">
-          <img src="./resources/Cross.png" alt="cross" class="cross__image" />
+          <img
+            src="./resources/Cross_modal.png"
+            alt="cross"
+            class="cross__image"
+          />
         </button>
         <h5 class="popup__h5">EMAIL</h5>
 
@@ -46,7 +53,8 @@
         <button type="submit" class="popup__submit">Submit</button>
       </form>
     </div>
-    <header id="us" class="header">
+
+    <header class="header">
       <h2 class="header__h2">OXYGENShop</h2>
       <a id="navMenu">
         <img
@@ -60,13 +68,13 @@
         <li><a href="#us">WHY US</a></li>
         <li><a href="#benefits">BENEFITS</a></li>
         <li><a href="#pricing">PRICES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#form__main">CONTACT</a></li>
       </ul>
       <ul class="header__big">
         <li><a href="#us">WHY US</a></li>
         <li><a href="#benefits">BENEFITS</a></li>
         <li><a href="#pricing">PRICES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#form__main">CONTACT</a></li>
       </ul>
     </header>
 
@@ -89,7 +97,7 @@
           alt="computer1"
         />
       </section>
-      <section class="pop__sales">
+      <section id="us" class="pop__sales">
         <h4 class="pop__sales__h4">
           The most popular sales platform in country
         </h4>
@@ -132,7 +140,7 @@
           </div>
         </div>
       </section>
-      <section class="card">
+      <section id="benefits" class="card">
         <hr class="card__space" />
         <div class="card__1">
           <div class="images">
@@ -229,7 +237,7 @@
         <hr class="card__space__bottom" />
       </section>
 
-      <section class="pricing">
+      <section class="pricing" id="pricing">
         <h2 class="pricing__h2">Pricing</h2>
 
         <div id="units" class="converter">

@@ -7,6 +7,7 @@ document
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const consent = document.getElementById("consent");
+    const alert = document.getElementById("alert");
     const nameError = name.nextElementSibling;
     const emailError = email.nextElementSibling;
 
@@ -54,7 +55,10 @@ document
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
-          alert("Thank you for submitting your form!");
+          alert.style.display = "block";
+          setTimeout(() => {
+            alert.style.display = "none";
+          }, 2000);
         })
         .catch((error) => console.error("Error:", error));
     }
